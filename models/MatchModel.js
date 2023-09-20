@@ -7,6 +7,10 @@ const MatchSchema = new mongoose.Schema(
     location: String,
     predictedWinner: String,
     matchDate: Date,
+    createdBy: {
+      type: mongoose.Types.ObjectId,
+      ref: "User",
+    },
   },
   { timestamps: true }
 );

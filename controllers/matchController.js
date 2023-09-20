@@ -1,25 +1,17 @@
-import { nanoid } from "nanoid";
 import "express-async-errors";
 import Match from "../models/MatchModel.js";
 import StatusCodes from "http-status-codes";
-import { NotFoundError } from "../errors/customErrors.js";
 
+// http requests to return all matches, single match, edit, and delete matches
 export const getAllMatches = async (req, res) => {
-  const matches = await Match.find({});
+  console.log(req.user);
+  const matches = await Match.find({ createdBy: req.user.userId });
   res.status(StatusCodes.OK).json({ matches });
 };
 
 export const createMatch = async (req, res) => {
-  const { opponent1, opponent2, location, predictedWinner, matchDate } =
-    req.body;
-
-  const match = await Match.create({
-    opponent1,
-    opponent2,
-    location,
-    predictedWinner,
-    matchDate,
-  });
+  req.body.createdBy = req.user.userId;
+  const match = await Match.create(req.body);
   res.status(StatusCodes.CREATED).json({ match });
 };
 

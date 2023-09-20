@@ -14,6 +14,8 @@ import {
   EditMatch,
 } from "./pages";
 
+import { action as registerAction } from "./pages/Register";
+
 // check the localStorage for dark theme setting
 const checkDefaultTheme = () => {
   const isDarkTheme = localStorage.getItem("darkTheme") === "true";
@@ -38,6 +40,7 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register />,
+        action: registerAction,
       },
       {
         path: "/login",

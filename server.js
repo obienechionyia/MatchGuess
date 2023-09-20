@@ -1,11 +1,15 @@
 import express from "express";
 import morgan from "morgan";
-import { nanoid } from "nanoid";
 import * as dotenv from "dotenv";
+// import routers
 import matchRouter from "./routers/matchRouter.js";
+import authRouter from "./routers/authRouter.js";
+import userRouter from "./routers/userRouter.js";
+
 import mongoose from "mongoose";
-import { body, validationResult } from "express-validator";
 import errorHandlerMiddleware from "./middleware/errorHandlerMiddleware.js";
+import cookieParser from "cookie-parser";
+import { authenticateUser } from "./middleware/authMiddleWare.js";
 
 dotenv.config();
 
@@ -18,8 +22,15 @@ if (process.env.NODE_ENV === "development") {
 const port = process.env.PORT || 5100;
 
 app.use(express.json());
+app.use(cookieParser());
 
-app.use("/api/v1/matches", matchRouter);
+app.get("/api/v1/test", (req, res) => {
+  res.json({ msg: "test route" });
+});
+
+app.use("/api/v1/matches", authenticateUser, matchRouter);
+app.use("/api/v1/auth", authRouter);
+app.use("/api/v1/users", authenticateUser, userRouter);
 
 app.use("*", (req, res) => {
   res.status(404).json({ msg: "not found" });
@@ -30,11 +41,7 @@ app.use("*", (req, res) => {
   res.status(404).json({ msg: "not found" });
 });
 
-// error middleware
-app.use((err, req, res, next) => {
-  console.log(err);
-  res.status(500).json({ msg: "something went wrong" });
-});
+app.use(errorHandlerMiddleware);
 
 try {
   await mongoose.connect(process.env.MONGO_URL);
@@ -45,5 +52,3 @@ try {
   console.log(error);
   process.exit(1);
 }
-
-app.use(errorHandlerMiddleware);
