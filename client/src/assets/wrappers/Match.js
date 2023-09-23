@@ -27,8 +27,9 @@ const Wrapper = styled.article`
     margin-right: 2rem;
   }
   .info {
-    h5 {
+    h2 {
       margin-bottom: 0.5rem;
+      text-transform: capitalize;
     }
     p {
       margin: 0;

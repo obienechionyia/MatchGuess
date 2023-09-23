@@ -8,9 +8,9 @@ import { MdAdminPanelSettings } from "react-icons/md";
 const links = [
   { text: "add match", path: ".", icon: <FaWpforms /> },
   { text: "all matches", path: "all-matches", icon: <MdQueryStats /> },
-  { text: "stats", path: "stats", icon: <IoBarChartSharp /> },
+  // { text: "stats", path: "stats", icon: <IoBarChartSharp /> },
   { text: "profile", path: "profile", icon: <ImProfile /> },
-  { text: "admin", path: "admin", icon: <MdAdminPanelSettings /> },
+  // { text: "admin", path: "admin", icon: <MdAdminPanelSettings /> },
 ];
 
 export default links;

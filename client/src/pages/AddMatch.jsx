@@ -11,7 +11,7 @@ export const action = async ({ request }) => {
   try {
     await customFetch.post("/matches", data);
     toast.success("Job added successfully");
-    return redirect("all-matches");
+    return redirect("/dashboard/all-matches");
   } catch (error) {
     toast.error(error?.response?.data?.msg);
     return error;
@@ -30,6 +30,7 @@ const AddMatch = () => {
           <FormRow type="text" name="opponent1" labelText="opponent 1" />
           <FormRow type="text" name="opponent2" labelText="opponent 2" />
           <FormRow type="text" labelText="match location" name="location" />
+          <FormRow type="text" labelText="match date" name="matchDate" />
           <FormRow
             type="text"
             name="predictedWinner"

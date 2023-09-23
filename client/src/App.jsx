@@ -18,6 +18,11 @@ import { action as registerAction } from "./pages/Register";
 import { action as loginAction } from "./pages/Login";
 import { action as addMatchAction } from "./pages/AddMatch";
 import { loader as dashboardLoader } from "./pages/DashboardLayout";
+import { loader as allMatchesLoader } from "./pages/AllMatches";
+import { loader as editMatchLoader } from "./pages/EditMatch";
+import { action as editMatchAction } from "./pages/EditMatch";
+import { action as deleteMatchAction } from "./pages/DeleteMatch";
+import { action as profileAction } from "./pages/Profile";
 
 // check the localStorage for dark theme setting
 const checkDefaultTheme = () => {
@@ -65,12 +70,24 @@ const router = createBrowserRouter([
             element: <Stats />,
           },
           {
+            path: "edit-match/:id",
+            element: <EditMatch />,
+            action: editMatchAction,
+            loader: editMatchLoader,
+          },
+          {
+            path: "delete-match/:id",
+            action: deleteMatchAction,
+          },
+          {
             path: "all-matches",
             element: <AllMatches />,
+            loader: allMatchesLoader,
           },
           {
             path: "profile",
             element: <Profile />,
+            action: profileAction,
           },
           {
             path: "admin",
