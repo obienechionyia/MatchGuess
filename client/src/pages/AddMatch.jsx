@@ -1,4 +1,4 @@
-import { FormRow } from "../components";
+import { FormRow, SubmitBtn } from "../components";
 import Wrapper from "../assets/wrappers/DashboardFormPage";
 import { Form, useNavigation, redirect } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -37,13 +37,7 @@ const AddMatch = () => {
             labelText="predicted winner"
           />
 
-          <button
-            type="submit"
-            className="btn btn-block form-btn "
-            disabled={isSubmitting}
-          >
-            {isSubmitting ? "submitting..." : "submit"}
-          </button>
+          <SubmitBtn formBtn />
         </div>
       </Form>
     </Wrapper>

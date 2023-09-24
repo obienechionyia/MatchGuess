@@ -1,6 +1,7 @@
 import express from "express";
 import morgan from "morgan";
 import * as dotenv from "dotenv";
+dotenv.config();
 // import routers
 import matchRouter from "./routers/matchRouter.js";
 import authRouter from "./routers/authRouter.js";
@@ -17,15 +18,13 @@ import { dirname } from "path";
 import { fileURLToPath } from "url";
 import path from "path";
 
-dotenv.config();
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-
 cloudinary.config({
   cloud_name: process.env.CLOUD_NAME,
   api_key: process.env.CLOUD_API_KEY,
   api_secret: process.env.CLOUD_API_SECRET,
 });
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const app = express();
 

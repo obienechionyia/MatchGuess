@@ -1,4 +1,4 @@
-import { FormRow } from "../components";
+import { FormRow, SubmitBtn } from "../components";
 import Wrapper from "../assets/wrappers/DashboardFormPage";
 import { useLoaderData } from "react-router-dom";
 import { Form, useNavigation, redirect, useParams } from "react-router-dom";
@@ -68,13 +68,7 @@ const EditMatch = () => {
             name="matchDate"
             defaultValue={match.matchDate.slice(0, -14)}
           />
-          <button
-            type="submit"
-            className="btn btn-block form-btn "
-            disabled={isSubmitting}
-          >
-            {isSubmitting ? "submitting..." : "submit"}
-          </button>
+          <SubmitBtn formBtn />
         </div>
       </Form>
     </Wrapper>

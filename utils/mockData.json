@@ -1,0 +1,142 @@
+[
+  {
+    "opponent1": "washington commanders",
+    "opponent2": "miami dolphins",
+    "location": "miami",
+    "matchDate": "12/26/2022",
+    "predictedWinner": "washington commanders"
+  },
+  {
+    "opponent1": "miami heat",
+    "opponent2": "minnesota timberwolves",
+    "location": "miami",
+    "matchDate": "10/18/2023",
+    "predictedWinner": "minnesota timberwolves"
+  },
+  {
+    "opponent1": "orlando magic",
+    "opponent2": "los angeles clippers",
+    "location": "Los Angeles",
+    "matchDate": "11/29/2023",
+    "predictedWinner": "los angeles clippers"
+  },
+  {
+    "opponent1": "texas rangers",
+    "opponent2": "baltimore orioles",
+    "location": "baltimore, maryland",
+    "matchDate": "4/7/2024",
+    "predictedWinner": "texas rangers"
+  },
+  {
+    "opponent1": "devin haney",
+    "opponent2": "gervonta davis",
+    "location": "las vegas",
+    "matchDate": "11/1/2023",
+    "predictedWinner": "gervonta davis"
+  },
+  {
+    "opponent1": "tyson fury",
+    "opponent2": "anthony joshua",
+    "location": "loondon, england",
+    "matchDate": "2/15/2024",
+    "predictedWinner": "tyson fury"
+  },
+  {
+    "opponent1": "los angeles lakers",
+    "opponent2": "atlanta hawks",
+    "location": "atlanta",
+    "matchDate": "4/9/2024",
+    "predictedWinner": "los angeles lakers"
+  },
+  {
+    "opponent1": "san antonio spurs",
+    "opponent2": "dallas mavericks",
+    "location": "dallas",
+    "matchDate": "5/7/2023",
+    "predictedWinner": "dallas mavericks"
+  },
+  {
+    "opponent1": "sacramento kings",
+    "opponent2": "washington wizards",
+    "location": "washington, dc",
+    "matchDate": "10/21/2022",
+    "predictedWinner": "washington wizards"
+  },
+  {
+    "opponent1": "milwaukee bucks",
+    "opponent2": "boston celtics",
+    "location": "boston",
+    "matchDate": "4/22/2023",
+    "predictedWinner": "milwaukee bucks"
+  },
+  {
+    "opponent1": "phoenix suns",
+    "opponent2": "golden state warriors",
+    "location": "phoenix",
+    "matchDate": "6/26/2023",
+    "predictedWinner": "phoenix suns"
+  },
+  {
+    "opponent1": "brooklyn nets",
+    "opponent2": "new york knicks",
+    "location": "brooklyn, ny",
+    "matchDate": "2/28/2023",
+    "predictedWinner": "brooklyn nets"
+  },
+  {
+    "opponent1": "portland trailblazers",
+    "opponent2": "los angeles clippers",
+    "location": "portland, oregon",
+    "matchDate": "11/4/2022",
+    "predictedWinner": "los angeles clippers"
+  },
+  {
+    "opponent1": "washington commanders",
+    "opponent2": "new england patriots",
+    "location": "new england",
+    "matchDate": "11/18/2023",
+    "predictedWinner": "washington commanders"
+  },
+  {
+    "opponent1": "new york jets",
+    "opponent2": "los angeles rams",
+    "location": "new york, ny",
+    "matchDate": "3/25/2023",
+    "predictedWinner": "new york jets"
+  },
+  {
+    "opponent1": "atlanta falcons",
+    "opponent2": "las vegas raiders",
+    "location": "las vegas",
+    "matchDate": "11/4/2022",
+    "predictedWinner": "atlanta falcons"
+  },
+  {
+    "opponent1": "dallas cowboys",
+    "opponent2": "philadelphia eagles",
+    "location": "dallas, texas",
+    "matchDate": "1/8/2023",
+    "predictedWinner": "philadelphia eagles"
+  },
+  {
+    "opponent1": "philadelphia eagles",
+    "opponent2": "washington commanders",
+    "location": "washington, dc",
+    "matchDate": "2/24/2024",
+    "predictedWinner": "washington commanders"
+  },
+  {
+    "opponent1": "brooklyn nets",
+    "opponent2": "houston rockets",
+    "location": "houston, texas",
+    "matchDate": "2/22/2023",
+    "predictedWinner": "houston rockets"
+  },
+  {
+    "opponent1": "houston astros",
+    "opponent2": "washington nationals",
+    "location": "houston, texas",
+    "matchDate": "6/24/2023",
+    "predictedWinner": "washington nationals"
+  }
+]

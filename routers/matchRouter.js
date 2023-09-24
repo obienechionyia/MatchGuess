@@ -8,15 +8,19 @@ import {
   deleteMatch,
 } from "../controllers/matchController.js";
 import { validateMatchInput } from "../middleware/validationMiddleware.js";
+import { checkForTestUser } from "../middleware/authMiddleWare.js";
 
 // router.get('/', getAllJobs);
 // router.post('/', createJob);
 
-router.route("/").get(getAllMatches).post(validateMatchInput, createMatch);
+router
+  .route("/")
+  .get(getAllMatches)
+  .post(checkForTestUser, validateMatchInput, createMatch);
 router
   .route("/:id")
   .get(getMatch)
-  .patch(validateMatchInput, updateMatch)
-  .delete(deleteMatch);
+  .patch(checkForTestUser, validateMatchInput, updateMatch)
+  .delete(checkForTestUser, deleteMatch);
 
 export default router;
