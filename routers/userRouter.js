@@ -5,7 +5,7 @@ import {
   updateUser,
   getMatchStats,
 } from "../controllers/userController.js";
-import { authorizePermissions } from "../middleware/authMiddleWare.js";
+import { authorizePermissions } from "../middleware/authMiddleware.js";
 import upload from "../middleware/multerMiddleware.js";
 import { validateUpdateUserInput } from "../middleware/validationMiddleware.js";
 
