@@ -4,9 +4,9 @@ import StatusCodes from "http-status-codes";
 
 // http requests to return all matches, single match, edit, and delete matches
 export const getAllMatches = async (req, res) => {
-  console.log(req.user);
   const matches = await Match.find({ createdBy: req.user.userId });
-  res.status(StatusCodes.OK).json({ matches });
+  const totalMatches = matches.length;
+  res.status(StatusCodes.OK).json({ matches, totalMatches });
 };
 
 export const createMatch = async (req, res) => {

@@ -23,7 +23,6 @@ const AllMatches = () => {
 
   return (
     <AllMatchesContext.Provider value={{ data }}>
-      <SearchContainer />
       <MatchesContainer />
     </AllMatchesContext.Provider>
   );
