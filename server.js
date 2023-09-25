@@ -11,7 +11,7 @@ import cloudinary from "cloudinary";
 import mongoose from "mongoose";
 import errorHandlerMiddleware from "./middleware/errorHandlerMiddleware.js";
 import cookieParser from "cookie-parser";
-import { authenticateUser } from "./middleware/authMiddleWare.js";
+import { authenticateUser } from "./middleware/authMiddleware.js";
 
 // public
 import { dirname } from "path";

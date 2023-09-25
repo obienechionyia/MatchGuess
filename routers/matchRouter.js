@@ -8,7 +8,7 @@ import {
   deleteMatch,
 } from "../controllers/matchController.js";
 import { validateMatchInput } from "../middleware/validationMiddleware.js";
-import { checkForTestUser } from "../middleware/authMiddleWare.js";
+import { checkForTestUser } from "../middleware/authMiddleware.js";
 
 // router.get('/', getAllJobs);
 // router.post('/', createJob);
