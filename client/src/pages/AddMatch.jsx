@@ -30,7 +30,7 @@ const AddMatch = () => {
           <FormRow type="text" name="opponent1" labelText="opponent 1" />
           <FormRow type="text" name="opponent2" labelText="opponent 2" />
           <FormRow type="text" labelText="match location" name="location" />
-          <FormRow type="text" labelText="match date" name="matchDate" />
+          <FormRow type="date" labelText="match date" name="matchDate" />
           <FormRow
             type="text"
             name="predictedWinner"
